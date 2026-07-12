@@ -1,0 +1,6 @@
+DOMAIN_SUMMARY = 'Human Resources Escalation Triage involves identifying and addressing employee concerns, resolving conflicts, and escalating issues to higher management when necessary.'
+USER_PERSONA = 'HR Manager: Responsible for managing employee concerns, resolving conflicts, and escalating issues to higher management when necessary.'
+STARTER_QUESTIONS = ['What are the common employee concerns?', 'How can we improve conflict resolution?', 'What are the key factors affecting employee satisfaction?']
+WORKFLOW_STEPS = ['Identify employee concerns', 'Analyze employee feedback', 'Escalate issues to higher management', 'Monitor and evaluate employee satisfaction']
+BUSINESS_RULES = ['Employee concerns must be addressed within 24 hours', 'Conflicts must be resolved within 48 hours', 'Employee satisfaction must be monitored regularly']
+TOOL_CATALOG = [{'name': 'natural_language_processing_nlp', 'description': 'Used for text analysis and sentiment analysis'}, {'name': 'knowledge_graph', 'description': 'Used for storing and querying employee data'}, {'name': 'database', 'description': 'Used for storing employee data and feedback'}, {'name': 'api_gateway', 'description': 'Used for API calls and communication between modules'}]
