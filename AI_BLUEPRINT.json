@@ -1,0 +1,265 @@
+{
+  "mode": "ai",
+  "project_title": "Human Resources Escalation Triage",
+  "short_description": "A beginner-friendly Simple RAG (Red, Amber, Green) project for Human Resources Escalation Triage",
+  "domain_summary": "Human Resources Escalation Triage involves identifying and addressing employee concerns, resolving conflicts, and escalating issues to higher management when necessary.",
+  "user_persona": "HR Manager: Responsible for managing employee concerns, resolving conflicts, and escalating issues to higher management when necessary.",
+  "architecture_notes": [
+    "Use a microservices architecture to improve scalability and maintainability",
+    "Implement a caching layer to improve performance",
+    "Use a message queue to handle asynchronous tasks"
+  ],
+  "backend_modules": [
+    "NLP Module",
+    "Knowledge Graph Module",
+    "Database Module",
+    "API Gateway Module"
+  ],
+  "frontend_features": [
+    "User Interface",
+    "Input Form",
+    "Output Display"
+  ],
+  "data_sources": [
+    "Employee Feedback Forms",
+    "HR Database",
+    "Knowledge Graph"
+  ],
+  "testing_strategy": [
+    "Unit testing, Integration testing, and End-to-end testing"
+  ],
+  "starter_questions": [
+    "What are the common employee concerns?",
+    "How can we improve conflict resolution?",
+    "What are the key factors affecting employee satisfaction?"
+  ],
+  "workflow_steps": [
+    "Identify employee concerns",
+    "Analyze employee feedback",
+    "Escalate issues to higher management",
+    "Monitor and evaluate employee satisfaction"
+  ],
+  "business_rules": [
+    "Employee concerns must be addressed within 24 hours",
+    "Conflicts must be resolved within 48 hours",
+    "Employee satisfaction must be monitored regularly"
+  ],
+  "sample_documents": [
+    {
+      "filename": "Employee Feedback Form.docx",
+      "content": "Please provide feedback on your experience with our HR department."
+    },
+    {
+      "filename": "HR Database Schema.sql",
+      "content": "CREATE TABLE employees (id INT PRIMARY KEY, name VARCHAR(255), email VARCHAR(255));"
+    },
+    {
+      "filename": "Knowledge Graph Schema.rdf",
+      "content": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">...</rdf:RDF>"
+    }
+  ],
+  "tool_catalog": [
+    {
+      "name": "Natural Language Processing (NLP)",
+      "description": "Used for text analysis and sentiment analysis"
+    },
+    {
+      "name": "Knowledge Graph",
+      "description": "Used for storing and querying employee data"
+    },
+    {
+      "name": "Database",
+      "description": "Used for storing employee data and feedback"
+    },
+    {
+      "name": "API Gateway",
+      "description": "Used for API calls and communication between modules"
+    }
+  ],
+  "agent_plan": [
+    {
+      "name": "Architecture Agent",
+      "role": "Define app boundaries, data flow, runtime stack, and integration points.",
+      "outputs": [
+        "Use a microservices architecture to improve scalability and maintainability",
+        "Implement a caching layer to improve performance",
+        "Use a message queue to handle asynchronous tasks"
+      ]
+    },
+    {
+      "name": "Backend Agent",
+      "role": "Design FastAPI modules, service contracts, validation, and error handling.",
+      "outputs": [
+        "NLP Module",
+        "Knowledge Graph Module",
+        "Database Module",
+        "API Gateway Module"
+      ]
+    },
+    {
+      "name": "Frontend Agent",
+      "role": "Design React screens, state flow, controls, and user feedback states.",
+      "outputs": [
+        "User Interface",
+        "Input Form",
+        "Output Display"
+      ]
+    },
+    {
+      "name": "Database Agent",
+      "role": "Design persistence models, sample data, indexes, and audit records.",
+      "outputs": [
+        "Run history",
+        "Source document metadata",
+        "Generated workflow audit records"
+      ]
+    },
+    {
+      "name": "Testing Agent",
+      "role": "Define contract tests, smoke tests, and generated project validation.",
+      "outputs": [
+        "Unit testing, Integration testing, and End-to-end testing"
+      ]
+    },
+    {
+      "name": "DevOps Agent",
+      "role": "Define environment variables, Docker workflow, and repository packaging.",
+      "outputs": [
+        "Docker-ready project",
+        "Environment sample file",
+        "GitHub repository upload"
+      ]
+    },
+    {
+      "name": "Reviewer Agent",
+      "role": "Review the generated plan for completeness, security, and portfolio quality.",
+      "outputs": [
+        "Identify employee concerns",
+        "Analyze employee feedback",
+        "Escalate issues to higher management",
+        "Monitor and evaluate employee satisfaction"
+      ]
+    }
+  ],
+  "model_provider": "groq",
+  "model_name": "llama-3.1-8b-instant",
+  "fallback_reason": null,
+  "architecture": "Real Estate Policy Assistant",
+  "architecture_template_id": 41,
+  "architecture_template_path": "templates/simple-rag/real-estate-policy-assistant",
+  "architecture_description": "Real Estate Policy Assistant for lease and property policy lookup.",
+  "architecture_version": "1.0",
+  "architecture_origin": "built_in",
+  "architecture_quality_score": 100,
+  "architecture_evolution_notes": "",
+  "architecture_technology": null,
+  "architecture_source_version": null,
+  "validation_pipeline": [
+    "pytest",
+    "npm install",
+    "npm run build",
+    "docker compose config",
+    "docker compose build"
+  ],
+  "problem_statement": "Build a portfolio-ready Simple RAG application for Human Resources Escalation Triage Simple RAG - Beginner Custom 19 that returns explainable answers with sources and timeline evidence.",
+  "target_users": [
+    "Students",
+    "Junior developers",
+    "Portfolio reviewers",
+    "Interviewers"
+  ],
+  "functional_requirements": [
+    "Accept a user question or task from the React UI.",
+    "Validate request shape and reject empty input.",
+    "Execute the Simple RAG workflow with observable timeline steps.",
+    "Return answer, cited sources, timeline, and project metadata.",
+    "Persist each run for debugging, demos, and interview explanation."
+  ],
+  "non_functional_requirements": [
+    "Keep local deterministic fallback behavior so the repo runs without paid API keys.",
+    "Avoid logging secrets or raw provider credentials.",
+    "Keep API responses stable enough for frontend and tests.",
+    "Support Docker-based local deployment and PostgreSQL production storage.",
+    "Keep generated documentation accurate enough for portfolio review."
+  ],
+  "entities": [
+    "RunLog",
+    "SourceDocument",
+    "RetrievedChunk",
+    "TimelineStep",
+    "EmbeddingRecord",
+    "VectorCollection"
+  ],
+  "database_tables": [
+    "run_logs",
+    "source_documents",
+    "retrieved_chunks",
+    "timeline_steps"
+  ],
+  "api_endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "purpose": "Health check for deployment and monitoring."
+    },
+    {
+      "method": "POST",
+      "path": "/api/ask",
+      "purpose": "Run the Simple RAG workflow for a user question."
+    },
+    {
+      "method": "GET",
+      "path": "/api/runs",
+      "purpose": "Return recent stored run logs for review and debugging."
+    }
+  ],
+  "workflows": [
+    "Identify employee concerns",
+    "Analyze employee feedback",
+    "Escalate issues to higher management",
+    "Monitor and evaluate employee satisfaction"
+  ],
+  "architecture_components": [
+    "React frontend",
+    "FastAPI backend",
+    "Pipeline service",
+    "Vector/search service",
+    "SQL database",
+    "Optional LLM provider"
+  ],
+  "sequence_flows": [
+    "Main ask flow",
+    "RAG retrieval flow",
+    "Agent execution flow",
+    "Provider fallback flow"
+  ],
+  "security_controls": [
+    "Input validation",
+    "CORS allowlist",
+    "Secret-only environment variables",
+    "Safe logging",
+    "Rate limiting recommendation"
+  ],
+  "scalability_plan": [
+    "Move long runs to a queue",
+    "Use PostgreSQL in production",
+    "Use managed vector DB when data grows",
+    "Cache repeated retrievals",
+    "Add metrics and traces"
+  ],
+  "interview_topics": [
+    "Problem statement",
+    "Architecture layers",
+    "DFD levels",
+    "Database schema",
+    "API contract",
+    "Security",
+    "Scaling"
+  ],
+  "documentation_quality_pipeline": [
+    "enrich_blueprint",
+    "write_design_docs",
+    "validate_required_docs",
+    "qa_score_before_push"
+  ]
+}
